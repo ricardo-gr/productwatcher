@@ -1,9 +1,12 @@
 import logging
+import os
+
+here = os.path.dirname(__file__)
 
 logger = logging.getLogger("app_logger")
 logger.setLevel(logging.INFO)
 
-file_handler = logging.FileHandler("updater.log")
+file_handler = logging.FileHandler(os.path.join(here, 'updater.log'))
 file_handler.setLevel(logging.INFO)
 
 console_handler = logging.StreamHandler()

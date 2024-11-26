@@ -1,7 +1,9 @@
 import sqlite3
 from datetime import datetime
+from config import Config
+from logger import logger
 
-DB_FILE = 'db.sqlite'
+DB_FILE = Config.SQLITE_PATH
 
 # Initialize SQLite database
 def init_db():

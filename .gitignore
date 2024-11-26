@@ -1,4 +1,7 @@
 db.sqlite
 config.ini
+
 *.pyc
 *.log
+
+venv
